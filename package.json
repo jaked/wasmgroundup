@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test chapter*/*.js",
+    "postinstall": "cat README.md"
+  },
+  "devDependencies": {
+    "ohm-js": "^17.1.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.13",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.2"
+  }
+}
