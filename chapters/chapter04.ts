@@ -59,7 +59,7 @@ const wafer = ohm.grammar(grammarDef);
 type Symbol = {
   name: string;
   idx: number;
-  what: "local";
+  what: "local" | "param";
 };
 
 function buildSymbolTable(grammar: ohm.Grammar, matchResult: ohm.MatchResult) {
@@ -169,6 +169,7 @@ function compile(source: string) {
 
 export * from "./chapter03.js";
 export { buildSymbolTable, resolveSymbol, locals, localidx };
+export type { Symbol };
 
 if (import.meta.vitest) {
   describe("symbol table", () => {

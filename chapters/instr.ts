@@ -12,6 +12,7 @@ const instr = {
     set: 0x21,
     tee: 0x22,
   },
+  call: 0x10,
   drop: 0x1a,
   end: 0x0b,
 };
